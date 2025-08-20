@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Print">
+      <UniqueIdentifier>{5eb2ab66-1473-460a-8c88-6ff2528a3781}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure">
+      <UniqueIdentifier>{599904f4-287c-4a67-bd20-b9d7eca41625}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DataStructure\LinkedList">
+      <UniqueIdentifier>{25a4f240-fb6b-40f4-bc4d-49fd6a2936ac}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Print\MultiplicationTable.c">
+      <Filter>Print</Filter>
+    </ClCompile>
+    <ClCompile Include="pch.c" />
+    <ClCompile Include="Main.c" />
+    <ClCompile Include="DataStructure\LinkedList\Reverse.c">
+      <Filter>DataStructure\LinkedList</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

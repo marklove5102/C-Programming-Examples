@@ -5,27 +5,26 @@ PLINKED_LIST
 Reverse(
     _In_ PLINKED_LIST LinkedList)
 {
-    PLINKED_LIST pPrev, pCurrent, pTemp;
+    PLINKED_LIST Prev, Current, Next;
 
-    /* Process the first node */
-    pPrev = LinkedList;
-    pCurrent = pPrev->Next;
-    pPrev->Next = NULL;
+    /* Preparation for the first node */
+    Prev = NULL;
+    Current = LinkedList;
 
     /* Traversal the rest nodes */
-    while (pCurrent != NULL)
+    while (Current != NULL)
     {
         /* Let current node points to the previous node */
-        pTemp = pCurrent->Next;
-        pCurrent->Next = pPrev;
+        Next = Current->Next;
+        Current->Next = Prev;
 
         /* Move to the next node */
-        pPrev = pCurrent;
-        pCurrent = pTemp;
+        Prev = Current;
+        Current = Next;
     }
 
     /* The last node is the head now */
-    return pPrev;
+    return Prev;
 }
 
 _Function_class_(FN_EXAMPLE_PROC)
@@ -48,7 +47,7 @@ DataStructure_LinkedList_Reverse(void)
         return false;
     }
     
-    /* Restore LinkedListA and return success */
+    /* Restore LinkedListA */
     LinkedListA = Reverse(ReverseLinkedList);
 
     /* Test LinkedListB, which has only one node */

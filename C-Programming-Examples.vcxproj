@@ -166,6 +166,7 @@
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="DataStructure\LinkedList\Merge.c" />
     <ClCompile Include="DataStructure\LinkedList\Reverse.c" />
     <ClCompile Include="Main.c" />
     <ClCompile Include="Print\MultiplicationTable.c" />

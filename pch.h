@@ -30,6 +30,12 @@ PrintLinkedListEx(
 #define PrintLinkedList(x) PrintLinkedListEx(L###x, x)
 
 extern PLINKED_LIST LinkedListA; // { 1, 2, 3 }
+void ResetLinkedListA(void);
+
 extern PLINKED_LIST LinkedListB; // { 1 }
+void ResetLinkedListB(void);
+
+extern PLINKED_LIST LinkedListC; // { 0, 2, 5, 7 }
+void ResetLinkedListC(void);
 
 #pragma endregion

@@ -10,10 +10,12 @@ typedef struct _EXAMPLE_PROC
 
 /* Append new example here in alphabetical order */
 
+extern FN_EXAMPLE_PROC DataStructure_LinkedList_Merge;
 extern FN_EXAMPLE_PROC DataStructure_LinkedList_Reverse;
 extern FN_EXAMPLE_PROC Print_MultiplicationTable;
 
 static const EXAMPLE_PROC ExampleList[] = {
+    DECL_EXAMPLE_PROC(DataStructure_LinkedList_Merge),
     DECL_EXAMPLE_PROC(DataStructure_LinkedList_Reverse),
     DECL_EXAMPLE_PROC(Print_MultiplicationTable),
 };

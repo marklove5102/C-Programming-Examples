@@ -23,5 +23,8 @@
     <ClCompile Include="DataStructure\LinkedList\Reverse.c">
       <Filter>DataStructure\LinkedList</Filter>
     </ClCompile>
+    <ClCompile Include="DataStructure\LinkedList\Merge.c">
+      <Filter>DataStructure\LinkedList</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
